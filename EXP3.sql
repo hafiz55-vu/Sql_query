@@ -56,8 +56,8 @@ WHERE DATEDIFF(MONTH,JOINING_DATE,GETDATE()) >= 6;
 --4. Write an SQL query to update all worker salary whose title is manager. 
 UPDATE WORKER SET SALARY = SALARY + 5000
 WHERE 
---5. Write an SQL query to update all worker bonus 10% whose joining_date before ‘2014
---04-11 09:00:00’ otherwise bonus update 5% and also check department name is ‘Admin’.
+--5. Write an SQL query to update all worker bonus 10% whose joining_date before ï¿½2014
+--04-11 09:00:00ï¿½ otherwise bonus update 5% and also check department name is ï¿½Adminï¿½.
 UPDATE WORKER
 SET BONUS = CASE 
                 WHEN JOINING_DATE < '2014-04-11 09:00:00' THEN SALARY * 0.10
@@ -67,18 +67,16 @@ WHERE DEPARTMENT = 'Admin';
 
 --6. Write an SQL query to delete all workers who have not taken any bonus. 
 
---7. Write an SQL query to print details for Workers with the first name “Rana” and “Sajib” 
+--7. Write an SQL query to print details for Workers with the first name ï¿½Ranaï¿½ and ï¿½Sajibï¿½ 
 --from Worker table. 
 
---8. Write an SQL query to print details of workers excluding first names, “Rana” and “Sajib” 
+--8. Write an SQL query to print details of workers excluding first names, ï¿½Ranaï¿½ and ï¿½Sajibï¿½ 
 --from Worker table. 
 
---9. Write an SQL query to print details of the Workers whose FIRST_NAME contains ‘a’. 
+--9. Write an SQL query to print details of the Workers whose FIRST_NAME contains ï¿½aï¿½. 
 
---10. Write an SQL query to print details of the Workers whose FIRST_NAME starts with ‘k’.
+--10. Write an SQL query to print details of the Workers whose FIRST_NAME starts with ï¿½kï¿½.
 
---11. Write an SQL query to print details of the Workers whose FIRST_NAME ends with ‘r’ 
+--11. Write an SQL query to print details of the Workers whose FIRST_NAME ends with ï¿½rï¿½ 
 --and contains seven alphabets. 
 
---12. Write an SQL query to find the position of the alphabet (‘n’) in the FIRST_NAME 
---column ‘Sanjoy’ from Worker table. 
